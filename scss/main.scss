@@ -147,7 +147,32 @@ h1, h2, h3, h4, h5{
   .main-nav .nav-item .nav-link{
     color: #222;
   }
-  
+  li.custom-dropdown {
+    position: relative;
+    ul {
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      top: 3.5rem;
+      list-style: none;
+      background: #fff;
+      min-width: 300px;
+      padding-top: 15px;
+      padding-left: 40px;
+      padding-bottom: 25px;
+      li {
+        margin: 10px 0;
+        margin-right: 35px;
+        &:hover {
+          background-color: #f3f3f3;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
   
   /**************************
   *   BUTTONS
@@ -826,6 +851,55 @@ $cyan-a200: #18ffff;
     cursor: pointer;
   }
 }
-
-
+.categories {
+  background: #fff;
+  padding: 6rem 0;
+}
+.categories-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.categores-container {
+  display: flex;
+  padding: 3rem;
+  .cat-box {
+    width: 30%;
+    span {
+      display: block;
+      i {
+        font-size: 32px;
+      }
+      text-align: center;      
+    }
+  }
+}
+.blog {
+  padding: 3rem 0;
+}
+.blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.blog-img {
+  width: 350px;
+   img {
+     width: 100%;
+   }
+}
+.blog-info{
+  h6 {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 1rem 0.5rem;
+  }
+  p {
+    font-size: 16px;
+    padding: 0 0.5rem;
+  }
+  span {
+    display: inline-block;
+    padding: 0 .5rem;
+  }
+  
+}
   

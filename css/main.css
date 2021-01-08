@@ -124,6 +124,36 @@ h1, h2, h3, h4, h5 {
   color: #222;
 }
 
+li.custom-dropdown {
+  position: relative;
+}
+
+li.custom-dropdown ul {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 3.5rem;
+  list-style: none;
+  background: #fff;
+  min-width: 300px;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+li.custom-dropdown ul li {
+  margin: 10px 0;
+  margin-right: 35px;
+}
+
+li.custom-dropdown ul li:hover {
+  background-color: #f3f3f3;
+}
+
+li.custom-dropdown ul li a {
+  text-decoration: none;
+}
+
 /**************************
   *   BUTTONS
   ***************************/
@@ -919,5 +949,68 @@ h1, h2, h3, h4, h5 {
   float: left;
   margin: 1%;
   cursor: pointer;
+}
+
+.categories {
+  background: #fff;
+  padding: 6rem 0;
+}
+
+.categories-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.categores-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+}
+
+.categores-container .cat-box {
+  width: 30%;
+}
+
+.categores-container .cat-box span {
+  display: block;
+  text-align: center;
+}
+
+.categores-container .cat-box span i {
+  font-size: 32px;
+}
+
+.blog {
+  padding: 3rem 0;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.blog-img {
+  width: 350px;
+}
+
+.blog-img img {
+  width: 100%;
+}
+
+.blog-info h6 {
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 1rem 0.5rem;
+}
+
+.blog-info p {
+  font-size: 16px;
+  padding: 0 0.5rem;
+}
+
+.blog-info span {
+  display: inline-block;
+  padding: 0 .5rem;
 }
 /*# sourceMappingURL=main.css.map */
