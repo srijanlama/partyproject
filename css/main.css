@@ -607,7 +607,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .single-page-header .supplier-branding-img {
-  max-width: 147px;
+  max-width: 150px;
 }
 
 .single-page-header .supplier-branding-img img {
@@ -616,7 +616,7 @@ h1, h2, h3, h4, h5 {
 
 .single-page-header .supplier-branding-breadcrumb {
   color: #EC008C;
-  margin-left: 1.5rem;
+  margin-left: 15px;
   -webkit-transform: translateY(65px);
           transform: translateY(65px);
 }
@@ -671,7 +671,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .supplier-info {
-  margin: 1rem 0;
+  font-size: 18px !important;
+  margin: 2rem 0;
 }
 
 .supplier-feature-section {
@@ -882,5 +883,41 @@ h1, h2, h3, h4, h5 {
 
 .pricing-info ul li, .contact-info ul li {
   margin: 10px 0;
+}
+
+.gallary-section {
+  margin-top: 2rem;
+}
+
+.gallery {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.gallery .placeholder {
+  width: 48%;
+  float: left;
+}
+
+.gallery .placeholder img {
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  padding: 1% 1% 1% 0;
+  min-height: 300px;
+  max-height: 600px;
+}
+
+.gallery .gallery-images {
+  width: 48%;
+  margin: 0 1%;
+  float: left;
+}
+
+.gallery .image img {
+  width: 31.333%;
+  min-height: 125px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

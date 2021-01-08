@@ -554,14 +554,14 @@ $cyan-a200: #18ffff;
     display: flex;
   }
   .supplier-branding-img {
-    max-width: 147px ;
+    max-width: 150px ;
     img{
       width: 100%;
     }
   }
   .supplier-branding-breadcrumb{
     color: $primary-color;
-    margin-left: 1.5rem;
+    margin-left: 15px;
     transform: translateY(65px);
     ol {
       list-style: none;
@@ -606,7 +606,8 @@ $cyan-a200: #18ffff;
   margin-right: 10px;
 } 
 .supplier-info{
-  margin: 1rem 0;
+  font-size: 18px !important;
+  margin: 2rem 0;
 }
 
 .supplier-feature-section{
@@ -790,6 +791,39 @@ $cyan-a200: #18ffff;
     li {
       margin: 10px 0;
     }
+  }
+}
+
+// gallary section
+.gallary-section {
+  margin-top: 2rem;
+}
+.gallery {
+  width: 100%;
+  margin-top: 1rem;
+  .placeholder {
+    width: 48%;
+    // margin: 1%;
+    float: left;
+    img {
+      border: 1px solid #EEEEEE;
+      width: 100%;
+      padding:1% 1% 1% 0;
+      min-height: 300px;
+      max-height: 600px;
+    }
+  }
+  .gallery-images {
+    width: 48%;
+    margin:0 1%;
+    float: left;
+  }
+    .image img {
+    width: 31.333%;
+    min-height:125px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
   }
 }
 
