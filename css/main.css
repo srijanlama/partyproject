@@ -569,6 +569,28 @@ h1, h2, h3, h4, h5 {
   padding: 0 75px;
 }
 
+.single-page-header .action-div {
+  list-style: none;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single-page-header .action-div li {
+  margin-right: 25px;
+}
+
+.single-page-header .action-div a {
+  display: inline-block;
+  background-color: #EC008C;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .single-page-header h3 {
   font-weight: 800;
 }
@@ -756,8 +778,109 @@ h1, h2, h3, h4, h5 {
 }
 
 .newsletter {
-  padding: 5rem 0;
-  margin: auto 0;
+  padding-top: 6rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter form input[type="email"] {
+  width: 400px;
+  border-radius: 15px;
+  padding: 20px 25px;
+}
+
+.newsletter form input[type="submit"] {
+  background-color: #EC008C;
+  font-weight: bolder;
+  padding: 8px 45px;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.newsletter h2 {
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.time-table {
+  padding: 0 45px;
+  margin-bottom: 15px;
+}
+
+.time-table h6 {
+  font-size: 18px;
+  font-weight: bolder;
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+
+.time-table .group-list {
+  list-style: none !important;
+  padding-left: 42px;
+}
+
+.time-table .group-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.time-table .group-list li strong, .time-table .group-list li span {
+  display: block;
+}
+
+.time-table .group-list li strong {
+  font-weight: bolder;
+}
+
+.mini-map-container {
   width: 100%;
+  height: 300px;
+  padding: 0 45px;
+  margin-left: 40px;
+}
+
+.mini-map-container h6 {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.mini-map-container #map {
+  width: 100%;
+  height: 100%;
+}
+
+.pricing-info, .contact-info {
+  margin-bottom: 1.3rem;
+}
+
+.pricing-info ul, .contact-info ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.pricing-info ul li, .contact-info ul li {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
