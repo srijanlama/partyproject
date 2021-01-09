@@ -44,6 +44,22 @@ jQuery(document).ready(function($) {
   });
 });
 // drop down script
-$( document ).ready(function() {
-  
-});
+// $( document ).ready(function() {
+//     $(".nav-item").hover(function(){
+//       $(this).find('ul').first().stop().toggle(200);
+//     }, function(){
+//       $(this).find('ul').stop().hide(200);
+//     });
+// });
+$(document).ready(function(){
+  $(".nav-item").hover(function(){
+    $(this).children('.custom-dropdown-menu').slideDown(200);
+  },function(){
+    $(this).children('.custom-dropdown-menu').slideUp(200);
+  });
+
+  $(".custom-dropdown-menu").hover(function(){
+    $(this).toggleClass("reveal")
+  })
+})
+

@@ -29,6 +29,7 @@ html, body {
   font-family: "Apercu Pro", sans-serif;
   margin: 0;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .scrolled {
@@ -111,7 +112,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-nav .nav-item a {
-  margin-right: 2.38rem;
+  font-size: 16px;
   color: #222;
 }
 
@@ -124,45 +125,52 @@ h1, h2, h3, h4, h5 {
   color: #222;
 }
 
-li.custom-dropdown {
-  position: relative;
+.nav-item {
+  margin-right: 2.5rem;
 }
 
-li.custom-dropdown ul {
+li.navbar-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li.navbar-dropdown .dropdown-content {
+  display: none;
   position: absolute;
-  display: inline-block;
+  padding: 2rem 5rem;
   left: 0;
-  top: 3.5rem;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+li.navbar-dropdown .dropdown-content .header h3 {
+  color: #EC008C;
+  margin-bottom: 10px;
+}
+
+li.navbar-dropdown .dropdown-content ul {
   list-style: none;
-  background: #fff;
-  min-width: 300px;
-  padding-top: 15px;
-  padding-left: 40px;
-  padding-bottom: 25px;
+  padding: 0;
 }
 
-li.custom-dropdown ul li {
-  margin: 10px 0;
-  margin-right: 35px;
+li.navbar-dropdown .dropdown-content ul li {
+  padding: 5px;
 }
 
-li.custom-dropdown ul li:hover {
-  background-color: #f3f3f3;
-}
-
-li.custom-dropdown ul li a {
+li.navbar-dropdown .dropdown-content ul li a {
   text-decoration: none;
+}
+
+li.navbar-dropdown .dropdown-content ul li a:hover {
+  color: #EC008C;
 }
 
 /**************************
   *   BUTTONS
   ***************************/
 .theme-primary-btn {
-  margin: 1rem;
-  padding: 0.7rem 2.8rem;
+  display: inline-block;
+  padding: 0.4rem 2rem !important;
   background-color: #ec008c;
-  min-width: 170px;
-  margin: 0.8rem;
   text-align: center;
   border-radius: 35px;
   -webkit-box-shadow: 0px 10px 10px rgba(236, 0, 140, 0.3);
@@ -172,6 +180,10 @@ li.custom-dropdown ul li a {
   font-size: 0.8em;
   font-weight: bold;
   text-decoration: none !important;
+}
+
+.theme-primary-btn span {
+  font-size: 14px;
 }
 
 /**************************
