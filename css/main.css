@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5 {
 
 .nav-item {
   margin-right: 2.5rem;
+  padding: 20px 0;
 }
 
 li.navbar-dropdown:hover .dropdown-content {
@@ -137,12 +138,14 @@ li.navbar-dropdown .dropdown-content {
   display: none;
   position: absolute;
   padding: 2rem 5rem;
+  margin-top: 20px;
   left: 0;
   width: 100%;
   background-color: #f9f9f9;
 }
 
 li.navbar-dropdown .dropdown-content .header h3 {
+  font-size: 22px;
   color: #EC008C;
   margin-bottom: 10px;
 }
@@ -157,6 +160,7 @@ li.navbar-dropdown .dropdown-content ul li {
 }
 
 li.navbar-dropdown .dropdown-content ul li a {
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -977,11 +981,43 @@ li.navbar-dropdown .dropdown-content ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem;
+  padding: 0 3rem;
+}
+
+.categores-container .bg-even:nth-child(even) {
+  background-color: #EC008C;
+}
+
+.categores-container .bg-even:nth-child(even) a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.categores-container .bg-odd:nth-child(odd) {
+  background-color: #EC008C;
+}
+
+.categores-container .bg-odd:nth-child(odd) a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .categores-container .cat-box {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30%;
+}
+
+.categores-container .cat-box a {
+  display: block;
 }
 
 .categores-container .cat-box span {

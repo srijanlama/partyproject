@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5{
   }
   .nav-item {
     margin-right: 2.5rem;
+    padding: 20px 0;
   }
 li.navbar-dropdown{
   &:hover {
@@ -161,11 +162,13 @@ li.navbar-dropdown{
     display: none;
     position: absolute;
     padding:2rem 5rem;
+    margin-top: 20px;
     left: 0;
     width: 100%;
     background-color: #f9f9f9;
     .header  {
       h3{
+        font-size: 22px;
         color: $primary-color;       
         margin-bottom: 10px;
       }
@@ -176,9 +179,10 @@ li.navbar-dropdown{
        li {
          padding: 5px;
          a {
+           font-size: 14px;
            text-decoration: none;
            &:hover {
-            color: $primary-color;
+            color: $primary-color;         
           }
          }
        }
@@ -874,9 +878,34 @@ $cyan-a200: #18ffff;
 }
 .categores-container {
   display: flex;
-  padding: 3rem;
+  padding:  0 3rem;
+  .bg-even {
+    &:nth-child(even) {
+      background-color: $primary-color;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  .bg-odd {
+    &:nth-child(odd) {
+      background-color: $primary-color;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
   .cat-box {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30%;
+    a {
+      display: block;
+    }
     span {
       display: block;
       i {
