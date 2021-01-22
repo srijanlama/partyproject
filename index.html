@@ -129,10 +129,17 @@
             <div class="caption">
                 <h1 class="title-1 text-bold text-black">We make the party planning Easy <br> Affordable</h1>
                 <p class="sub-heading-1">Find The Best Supplier Near You</p>
+                <h3 class="output"></h3>
             </div>
             <form class="search-form text-black">
-                <div class="item text-bold"><i class="fa fa-map-marker on-right" aria-hidden="true"></i> Near</div>
-                <input type="text" class="item" placeholder="Search for the...">
+                <div class="item text-bold location-div"><i class="fas fa-map-marker-alt"></i><input type="text" name="searchByLocation" id="searchByLocation"></div>
+                <div class="auto-complete">
+                  <input id="searchByKeyword" type="text" class="item"  placeholder="Search for the..." autocomplete="off">
+                  <ul class="list-element">
+                    
+                  </ul>
+                </div>
+                
                 <button type="submit" class="item">Search</button>
             </form>
             <div class="banner">

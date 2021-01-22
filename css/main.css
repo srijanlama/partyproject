@@ -210,10 +210,34 @@ li.navbar-dropdown .dropdown-content ul li a:hover {
           align-items: center;
 }
 
+.location-div {
+  width: 200px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem !important;
+}
+
+#searchByLocation {
+  width: 100% !important;
+  margin-left: 5px;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .search-form .item {
   padding: 1rem 2rem;
   background-color: #FFF;
-  display: inline-block;
   font-size: 1.5rem;
   margin-right: 1rem;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -225,7 +249,7 @@ li.navbar-dropdown .dropdown-content ul li a:hover {
   border: none;
 }
 
-.search-form input {
+.search-form #searchByKeyword {
   min-width: 700px;
 }
 
@@ -247,6 +271,65 @@ li.navbar-dropdown .dropdown-content ul li a:hover {
 .search-form input::placeholder {
   font-weight: bold;
   color: #999;
+}
+
+.auto-complete {
+  position: relative;
+}
+
+.auto-complete .list-element {
+  display: none;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  min-width: 700px;
+  left: 0;
+  list-style: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  overflow-y: scroll;
+  height: 300px;
+  margin-top: 1px;
+}
+
+.auto-complete .list-element::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.auto-complete .list-element::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.auto-complete .list-element::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.auto-complete .list-element .list-element-item {
+  padding: 0.5rem 0;
+}
+
+.auto-complete .list-element .list-element-item a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 1rem;
+}
+
+.auto-complete .list-element .list-element-item a:hover {
+  background-color: #e2e0e0;
+}
+
+.auto-complete .list-element .list-element-item a i {
+  margin-right: 15px;
 }
 
 .hero .banner {
