@@ -341,7 +341,10 @@ li.navbar-dropdown{
   ***************************/
   
   .service-info{
-    padding-top:15%
+    // padding-top:15%
+    // padding-bottom: 3%;
+    margin-top: 5rem;
+    padding: 5rem 0;
   }
   
   .service-info .card{
@@ -974,9 +977,18 @@ $cyan-a200: #18ffff;
     width: 30%;
     a {
       display: block;
+      // transition: 0.3s;
+      .hover-icon {     
+        // width: 48px !important;
+        transition: 0.3s;   
+        &:hover {
+          transform: scale(1.3)
+        }
+      }
     }
     span {
       display: block;
+      margin-bottom: 0.5rem;
       i {
         font-size: 32px;
       }
