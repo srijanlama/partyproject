@@ -1125,8 +1125,23 @@ li.navbar-dropdown .dropdown-content ul li a:hover {
   width: 350px;
 }
 
+.blog-img .blog-img-link {
+  width: 300px;
+  height: 200px;
+  display: block;
+  overflow: hidden;
+}
+
 .blog-img img {
   width: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .blog-info h6 {

@@ -165,3 +165,10 @@ $("#searchByKeyword").keyup(function (eventData) {
     },
   });
 });
+
+// carousel
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+  });
+});
