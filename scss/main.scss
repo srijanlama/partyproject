@@ -167,15 +167,35 @@ li.navbar-dropdown{
     width: 100%;
     background-color: #f9f9f9;
     .header  {
-      h3{
-        font-size: 22px;
-        color: $primary-color;       
-        margin-bottom: 10px;
+      .megamemu-header{
+        display: inline-block;
+        font-size: 18px;
+        color: #EC008C;
+        margin-bottom: 7px;
+        margin-left: 4px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          margin-top: 4px;
+          background: $primary-color;
+          transition: width .3s;
+        }
+        &:hover{
+          &:after {          
+            width: 100%;         
+          }
+        }
+     
       }
     }
-     ul {
+     .megamenu-lists {
        list-style: none;    
-       padding: 0; 
+       padding: 0 0 1rem 0; 
        li {
          padding: 5px;
          a {
@@ -1038,4 +1058,3 @@ $cyan-a200: #18ffff;
   }
   
 }
-  
