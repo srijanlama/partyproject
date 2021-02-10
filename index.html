@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="fonts/custom-font-icons/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Party Project | Services Page</title>
   </head>
   <body>
     <!-- HEADER STARTS -->
+    <div class="gif-loader">
+      <img class="gif-loader-img" src="img/logo.svg" alt="">
+    </div>
     <header class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light custom-nav-spacing">
         <a class="navbar-brand" href="index.html"><img src="img/logo-img.png" alt=""></a>
@@ -164,7 +168,7 @@
                 <p class="sub-heading-1">Find The Best Supplier Near You</p>
                 <h3 class="output"></h3>
             </div>
-            <form class="search-form text-black">
+            <form id="large-form" class="search-form text-black">
                 <div class="item text-bold location-div"><i class="fas fa-map-marker-alt"></i><input type="text" name="searchByLocation" id="searchByLocation"></div>
                 <div class="auto-complete">
                   <input id="searchByKeyword" type="text" class="item"  placeholder="Search for the..." autocomplete="off">
@@ -175,7 +179,25 @@
                 
                 <button type="submit" class="item">Search</button>
             </form>
-            <div class="banner">
+            <div class="small-form">
+              <form action="">
+                <div class="form-group">
+                  <label for="">Location</label>
+                  <input type="text" class="form-control"  name="" id="">
+                </div>
+                <div class="form-group">
+                  <label for="">Search for the ...</label>
+                  <input type="text" class="form-control" name="" id="">
+                </div>
+                <div class="form-group">
+                  <button class="item">
+                    Search
+                  </button>
+                </div>
+                
+              </form>
+            </div>
+            <div   class="banner">
                 <h1>Party Planning Made Super Easy</h1>
                 <h6>From catering, venues to entainers, organisers, Party Project has everything you need to create perfect memories that will last a lifetime </p>
                 <div class="actions">
@@ -188,7 +210,7 @@
     <section class="service-info">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div data-aos="fade-right" class="col-md-6">
               <div class="card">
                 <div class="card-header">
                   <img type="image/svg+xml" src="img/icons/bottle-ic.svg" class="logo">
@@ -204,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div  data-aos="fade-left" class="col-md-6">
               <div class="card">
                 <div class="card-header">
                   <img src="img/icons/merchant-ic.svg" alt="">
@@ -228,7 +250,7 @@
         <h1>GET INTO THE PARTY</h1>
         <P><span> Browse the hundred of party planner , events and more</span></P>
       </div>
-      <div class="row">
+      <div  data-aos="zoom-out" class="row">
         <div class="col-md-12 col-lg-12">
           <div class="categores-container">
             <div class="cat-box bg-even">
@@ -513,7 +535,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    
   </body>
 </html>

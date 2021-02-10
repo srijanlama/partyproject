@@ -1,3 +1,16 @@
+//loading loader gif
+// $(window).load(function () {
+//   // PAGE IS FULLY LOADED
+//   // FADE OUT YOUR OVERLAYING DIV
+//   $(".gif-loader").fadeOut();
+// });
+// $(".gif-loader").fadeOut();
+$(window).on("load", function () {
+  setTimeout(() => {
+    $(".gif-loader").fadeOut();
+  }, 2000);
+});
+AOS.init();
 // $(function() {
 function initMap() {
   const uluru = { lat: -25.344, lng: 131.036 };
