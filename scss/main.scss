@@ -176,11 +176,6 @@ h1, h2, h3, h4, h5{
     padding: 20px 0;
   }
 li.navbar-dropdown{
-  &:hover {
-    .dropdown-content{
-      display: block;
-    }
-  }
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1086,6 +1081,19 @@ $cyan-a200: #18ffff;
 .small-form{
   display: none;
 }
+.search-btn-theme {
+  padding: 0.5rem 1rem ;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px #dddfe2;
+  
+  border: none;
+  &:hover {
+    box-shadow: 0 1px 8px 5px #dddfe2;
+  }
+}
+.show-class {
+  display: block !important;
+}
 
 // media query 
 @media only screen and (max-width: 1200px) {
@@ -1108,4 +1116,15 @@ $cyan-a200: #18ffff;
  #large-form {
    display: none;
  }
+ .fixed-top {
+   position: static;
+ }
+ .nav-item {
+  display: block;
+  width: 100%;
+ } 
+ .show-class {
+   display: none !important;
+ }
+
 }

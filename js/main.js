@@ -11,6 +11,7 @@ $(window).on("load", function () {
   }, 2000);
 });
 AOS.init();
+console.log($(window).width());
 // $(function() {
 function initMap() {
   const uluru = { lat: -25.344, lng: 131.036 };
@@ -53,28 +54,6 @@ jQuery(document).ready(function ($) {
       $(this).attr({ src: src });
       $(this).fadeIn("fast");
     });
-  });
-});
-// drop down script
-// $( document ).ready(function() {
-//     $(".nav-item").hover(function(){
-//       $(this).find('ul').first().stop().toggle(200);
-//     }, function(){
-//       $(this).find('ul').stop().hide(200);
-//     });
-// });
-$(document).ready(function () {
-  $(".nav-item").hover(
-    function () {
-      $(this).children(".custom-dropdown-menu").slideDown(200);
-    },
-    function () {
-      $(this).children(".custom-dropdown-menu").slideUp(200);
-    }
-  );
-
-  $(".custom-dropdown-menu").hover(function () {
-    $(this).toggleClass("reveal");
   });
 });
 
@@ -185,3 +164,13 @@ $(document).ready(function () {
     items: 1,
   });
 });
+
+// main navigation
+$(".navbar-dropdown").hover(
+  function () {
+    $(".dropdown-content").addClass("show-class");
+  },
+  function () {
+    $(".dropdown-content").removeClass("show-class");
+  }
+);
